@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import { Suspense } from "react";
+import { BarLoader } from "react-spinners";
+import Home from "./pages/Home";
 
-function App() {
+const App = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Suspense
+      fallback={
+        <div className="h-screen w-full flex items-center justify-center">
+          <BarLoader color="#42ddee" height={4} />
+        </div>
+      }
+    >
+      {loading ? (
+        <div className="h-screen w-full flex items-center justify-center">
+          <BarLoader color="#42ddee" height={4} />
+        </div>
+      ) : (
+        <Home />
+      )}
+    </Suspense>
   );
-}
+};
 
 export default App;
