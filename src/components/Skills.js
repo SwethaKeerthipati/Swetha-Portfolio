@@ -42,7 +42,7 @@ const Skills = () => {
                   designs.{" "}
                 </p>
               </div>
-              <div className="grid sm-grid-cols-1 md-grid-cols-2 lg-grid-cols-4 gap-4">
+              <div className="grid sm-grid-cols-1 grid-cols-4 gap-4">
                 <SkillBox logo={<IoLogoHtml5 />} skill={"HTML"} />
                 <SkillBox logo={<IoLogoCss3 />} skill={"CSS"} />
                 <SkillBox logo={<SiJavascript />} skill={"JavaScript"} />
@@ -64,7 +64,7 @@ const Skills = () => {
                 create full-stack web applications.{" "}
               </p>
             </div>
-            <div className="grid sm-grid-cols-1 md-grid-cols-2 lg-grid-cols-4 gap-4">
+            <div className="grid sm-grid-cols-1 md-grid-cols-2 grid-cols-4 gap-4">
               <SkillBox logo={<IoLogoNodejs />} skill={"Node Js"} />
               <SkillBox logo={<SiMongodb />} skill={"MongoDB"} />
               <SkillBox logo={<SiExpress />} skill={"Express Js"} />
@@ -88,7 +88,7 @@ const Skills = () => {
               development environments.{" "}
             </p>
           </div>
-          <div className="grid sm-grid-cols-1 md-grid-cols-2 lg-grid-cols-4 gap-4">
+          <div className="grid sm-grid-cols-1 md-grid-cols-2 grid-cols-4 gap-4">
             <SkillBox logo={<AiFillGithub />} skill={"Github"} />
             <SkillBox logo={<FaUbuntu />} skill={"Ubuntu"} />
           </div>
