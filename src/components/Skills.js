@@ -1,5 +1,4 @@
 import React from "react";
-import ProgressBar from "../components/ProgressBar";
 import SkillBox from "../components/SkillBox";
 
 import { IoLogoHtml5, IoLogoCss3 } from "react-icons/io";
@@ -11,83 +10,87 @@ import {
   SiExpress,
 } from "react-icons/si";
 import { SiTypescript } from "react-icons/si";
+import { AiFillGithub } from "react-icons/ai";
 
-import { FaReact } from "react-icons/fa";
+import { FaReact, FaUbuntu } from "react-icons/fa";
 import { IoLogoNodejs } from "react-icons/io";
 
-const Skills = ({ darkMode }) => {
+const Skills = () => {
   return (
     <div id="skills">
-      <div className=" container m-auto  mt-16">
+      <div className="container m-auto mt-16">
         {/* heading */}
         <div data-aos="fade-up" className="relative mb-5">
-          <h3 className=" text-3xl font-black text-gray-400 sm:text-2xl">
+          <h3 className="text-3xl font-black text-gray-400 sm:text-2xl">
             My Skills
           </h3>
           <span className="h-[1.1px] right-0 absolute w-[90%] bg-gray-300 block"></span>
         </div>
-        {/* content*/}
-        <div className="flex md:flex-col ">
-          <div className="left flex-1 w-full">
-            <p
-              data-aos="fade-up"
-              className=" text-gray-700 font-medium w-[100%]"
-            >
-              Here are my skills.
-            </p>
-            {/* left box */}
-            <div
-              data-aos="zoom-in"
-              className="progress flex items-center h-[100%] justify-end md:justify-center"
-            >
-              <div className=" flex flex-col gap-6  w-3/4  my-5 md:w-[90%]">
-                <ProgressBar logo={<IoLogoHtml5 />} name={"HTML"} value={95} />
-                <ProgressBar logo={<IoLogoCss3 />} name={"CSS"} value={88} />
-                <ProgressBar
-                  logo={<SiJavascript />}
-                  name={"Javascript"}
-                  value={80}
-                />
-                <ProgressBar logo={<FaReact />} name={"React Js"} value={80} />
-                <ProgressBar
-                  logo={<SiTailwindcss />}
-                  name={"Tailwind CSS"}
-                  value={80}
-                />
+        {/* content */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <div className="md:order-1">
+            <div className="first2 flex flex-col gap-10">
+              <div className="flex-1">
+                <h3 className="text-xl font-semibold mb-2 text-blue-500 ">
+                  {" "}
+                  Front-End Skills
+                </h3>
+                <p className="text-blue-500 mt-5 italic">
+                  {" "}
+                  I am proficient in front-end technologies.I love Creating
+                  user-friendly websites with interactive elements and stylish
+                  designs.{" "}
+                </p>
+              </div>
+              <div className="grid grid-cols-4 gap-4">
+                <SkillBox logo={<IoLogoHtml5 />} skill={"HTML"} />
+                <SkillBox logo={<IoLogoCss3 />} skill={"CSS"} />
+                <SkillBox logo={<SiJavascript />} skill={"JavaScript"} />
+                <SkillBox logo={<FaReact />} skill={"React"} />
+                <SkillBox logo={<SiTailwindcss />} skill={"Tailwindcss"} />
+                <SkillBox logo={<SiTypescript />} skill={"TypeScript"} />
               </div>
             </div>
           </div>
-          {/* right box */}
-          <div className="right relative flex-1 flex flex-wrap p-5 gap-10 items-center justify-center sm:w-full">
-            <div className="first2 flex flex-col gap-10">
-              <SkillBox
-                logo={<IoLogoNodejs />}
-                black={"white"}
-                white={"black"}
-                skill={"Node Js"}
-              />
-              <SkillBox
-                logo={<SiMongodb />}
-                black={"white"}
-                white={"black"}
-                skill={"MongoDB"}
-              />
+          <div className="md:order-2">
+            <div className="flex-1">
+              <h3 className="text-xl font-semibold mb-2 mt-3 text-blue-500">
+                {" "}
+                Back-End Skills
+              </h3>
+              <p className="text-blue-500 italic mb-2">
+                {" "}
+                I am also proficient in back-end technologies, allowing me to
+                create full-stack web applications.{" "}
+              </p>
             </div>
-            <div className="last2 flex flex-col gap-10">
-              <SkillBox
-                logo={<SiExpress />}
-                black={"black"}
-                white={"white"}
-                skill={"Express Js"}
-              />
-              <SkillBox
-                className=""
-                logo={<SiTypescript />}
-                black={"black"}
-                white={"white"}
-                skill={"TypeScript"}
-              />
+            <div className="grid grid-cols-4 gap-4">
+              <SkillBox logo={<IoLogoNodejs />} skill={"Node Js"} />
+              <SkillBox logo={<SiMongodb />} skill={"MongoDB"} />
+              <SkillBox logo={<SiExpress />} skill={"Express Js"} />
+              {/* Add more backend skills here */}
             </div>
+          </div>
+        </div>
+      </div>
+      <div className="container m-auto mt-16">
+        {/* Others */}
+        <div className="flex flex-col gap-10">
+          <div className="flex-1">
+            <h3 className="text-xl font-semibold mb-2 text-blue-500">
+              {" "}
+              Others
+            </h3>
+            <p className="text-blue-500 italic">
+              {" "}
+              In addition to my technical skills, I am also skilled in using Git
+              and GitHub for version control, as well as working with Ubuntu for
+              development environments.{" "}
+            </p>
+          </div>
+          <div className="grid grid-cols-4 gap-4">
+            <SkillBox logo={<AiFillGithub />} skill={"Github"} />
+            <SkillBox logo={<FaUbuntu />} skill={"Ubuntu"} />
           </div>
         </div>
       </div>
