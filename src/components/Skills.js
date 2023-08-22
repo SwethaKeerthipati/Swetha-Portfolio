@@ -29,47 +29,53 @@ const Skills = () => {
         {/* content */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           <div className="md:order-1">
-            <div className="flex flex-col gap-10">
-              <div className="flex-1">
-                <h3 className="text-xl font-semibold mb-2 text-blue-500 ">
-                  {" "}
-                  Front-End Skills
-                </h3>
-                <p className="text-blue-500 mt-5 italic">
-                  {" "}
-                  I am proficient in front-end technologies.I love Creating
-                  user-friendly websites with interactive elements and stylish
-                  designs.{" "}
-                </p>
-              </div>
-              <div className="grid sm-grid-cols-1 grid-cols-4 gap-4">
-                <SkillBox logo={<IoLogoHtml5 />} skill={"HTML"} />
-                <SkillBox logo={<IoLogoCss3 />} skill={"CSS"} />
-                <SkillBox logo={<SiJavascript />} skill={"JavaScript"} />
-                <SkillBox logo={<FaReact />} skill={"React"} />
-                <SkillBox logo={<SiTailwindcss />} skill={"Tailwindcss"} />
-                <SkillBox logo={<SiTypescript />} skill={"TypeScript"} />
-              </div>
-            </div>
+            <div className="flex flex-col gap-10"></div>
           </div>
-          <div className="md:order-2">
-            <div className="flex-1">
-              <h3 className="text-xl font-semibold mb-2 mt-3 text-blue-500">
-                {" "}
-                Back-End Skills
-              </h3>
-              <p className="text-blue-500 italic mb-2">
-                {" "}
-                I am also proficient in back-end technologies, allowing me to
-                create full-stack web applications.{" "}
-              </p>
-            </div>
-            <div className="grid sm-grid-cols-1 md-grid-cols-2 grid-cols-4 gap-4">
-              <SkillBox logo={<IoLogoNodejs />} skill={"Node Js"} />
-              <SkillBox logo={<SiMongodb />} skill={"MongoDB"} />
-              <SkillBox logo={<SiExpress />} skill={"Express Js"} />
-              {/* Add more backend skills here */}
-            </div>
+        </div>
+      </div>
+      <div className="container m-auto mt-16">
+        {/* Frontend */}
+        <div className="flex flex-col gap-10">
+          <div className="flex-1">
+            <h3 className="text-xl font-semibold mb-2 text-blue-500">
+              {" "}
+              Front-End Skills
+            </h3>
+            <p className="text-blue-500 mt-5 italic">
+              {" "}
+              I am proficient in front-end technologies. I love creating
+              user-friendly websites with interactive elements and stylish
+              designs.{" "}
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 grid-cols-3 gap-4">
+            <SkillBox logo={<IoLogoHtml5 />} skill={"HTML"} />
+            <SkillBox logo={<IoLogoCss3 />} skill={"CSS"} />
+            <SkillBox logo={<SiJavascript />} skill={"JavaScript"} />
+            <SkillBox logo={<FaReact />} skill={"React"} />
+            <SkillBox logo={<SiTailwindcss />} skill={"Tailwindcss"} />
+            <SkillBox logo={<SiTypescript />} skill={"TypeScript"} />
+          </div>
+        </div>
+      </div>
+      <div className="container m-auto mt-16">
+        {/* Backend */}
+        <div className="flex flex-col gap-10">
+          <div className="flex-1">
+            <h3 className="text-xl font-semibold mb-2 text-blue-500">
+              {" "}
+              Back-End Skills
+            </h3>
+            <p className="text-blue-500 italic mb-2">
+              {" "}
+              I am also proficient in back-end technologies, allowing me to
+              create full-stack web applications.{" "}
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 md:grid-cols-2 grid-cols-3 gap-4">
+            <SkillBox logo={<IoLogoNodejs />} skill={"Node Js"} />
+            <SkillBox logo={<SiMongodb />} skill={"MongoDB"} />
+            <SkillBox logo={<SiExpress />} skill={"Express Js"} />
           </div>
         </div>
       </div>
@@ -88,7 +94,7 @@ const Skills = () => {
               development environments.{" "}
             </p>
           </div>
-          <div className="grid sm-grid-cols-1 md-grid-cols-2 grid-cols-4 gap-4">
+          <div className="grid sm:grid-cols-2 md:grid-cols-2 grid-cols-3 gap-4">
             <SkillBox logo={<AiFillGithub />} skill={"Github"} />
             <SkillBox logo={<FaUbuntu />} skill={"Ubuntu"} />
           </div>
