@@ -27,11 +27,6 @@ const Skills = () => {
           <span className="h-[1.1px] right-0 absolute w-[90%] bg-gray-300 block"></span>
         </div>
         {/* content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          <div className="md:order-1">
-            <div className="flex flex-col gap-10"></div>
-          </div>
-        </div>
       </div>
       <div className="container m-auto mt-16">
         {/* Frontend */}
