@@ -79,7 +79,7 @@ const Banner = () => {
                 </a>
               </li>
 
-              {/* <li>
+              <li>
                 <a
                   href="https://medium.com/@swethakeerthipati"
                   target="_blank"
@@ -88,7 +88,7 @@ const Banner = () => {
                   {" "}
                   <FaMedium className=" h-[1.8rem] w-[1.8rem] text-xl hover:scale-125  " />{" "}
                 </a>
-              </li> */}
+              </li>
             </ul>
           </div>
         </div>

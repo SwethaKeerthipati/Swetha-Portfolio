@@ -47,16 +47,18 @@ const Experience = () => {
                 <div className=" text-[.9rem] text-justify break-words text-gray-500">
                   <ul>
                     <li>
-                      •Responsible for improving data analysis process as part
-                      of AMAT safety initiative.
+                      •Led automation initiatives for the Learning Management
+                      Portal (LMS), streamlining data extraction and report
+                      generation processes.
                     </li>
                     <li>
                       •Developed a website in Sharepoint to maintain Safety
                       related activities and dashboards.{" "}
                     </li>
                     <li>
-                      • Produce monthly and quarterly reports to identify trends
-                      and provide results to management.
+                      • Extracted critical data from the LMS and transformed it
+                      into actionable reports for higher management,
+                      facilitating data-driven decision-making.
                     </li>
                     <li>
                       • First point of contact for user related issues and
@@ -98,19 +100,21 @@ const Experience = () => {
                 <div className=" text-[.9rem] text-justify text-gray-500">
                   <ul>
                     <li>
-                      •Built a Knowledge sharing portal using HTML5,CSS and
-                      Javascript to maintain and share the internal
-                      documentation.
+                      •Developed a Learning Management Portal using HTML, CSS,
+                      and JavaScript, enhancing internal team collaboration and
+                      training processes.
                     </li>
                     <li>
-                      •Managed Bill of Materials information and end-to-end
-                      activities with customer and site.
+                      •Automated the modification of Bill of Materials (BOM)
+                      data received from customers for ERP integration. Created
+                      Excel VBA code to streamline and expedite this previously
+                      manual task.
                     </li>
                     <li>
-                      •Act as the main point of contact for requests relating to
-                      the Document Control.
+                      •Collaborated closely with cross-functional teams to
+                      ensure seamless data transfer between departments,
+                      improving overall operational efficiency.
                     </li>
-                    <li>•Migrated internal Excel based reports to PowerBI.</li>
                   </ul>
                 </div>
               </div>
