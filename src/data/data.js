@@ -15,4 +15,12 @@ export const data = [
     link: "https://painted-pallete.vercel.app/",
     git: "https://github.com/SwethaKeerthipati/Painted-Pallete",
   },
+  {
+    id: 3,
+    img: "https://media.tenor.com/5wiwDDYMLdEAAAAi/life-cat.gif",
+    title: "Calculator",
+    desc: "Built a JavaScript calculator for quick and accurate online arithmetic calculations.",
+    link: "https://calculator-javaascript.netlify.app/",
+    git: "https://github.com/SwethaKeerthipati/JsCalculator",
+  },
 ];
