@@ -4,7 +4,7 @@ import { FaLinkedinIn, FaMedium } from "react-icons/fa";
 import { FiDownload } from "react-icons/fi";
 import { TypeAnimation } from "react-type-animation";
 import sweImage from "../assets/K.png";
-import resumePDF from "../assets/Swetha-Resume.pdf";
+import resumePDF from "../assets/Swetha Keerthipati.pdf";
 
 const Banner = () => {
   return (
