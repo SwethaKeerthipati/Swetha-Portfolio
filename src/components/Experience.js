@@ -89,7 +89,7 @@ const Experience = () => {
               {/* design */}
               <div className=" flex flex-col gap-1 border-2 border-blue-400 shadow-[0px_0px_16px_1px_rgba(0,0,0,0.1)] p-3 rounded-lg">
                 <h1 className="text-[1.4rem] font-semibold sm:text-xl">
-                  Junior Engineer
+                  Software Engineer
                 </h1>
                 <span className=" text-[.9rem] font-semibold text-gray-500 sm:text-base">
                   Flextronics India Pvt LTD
