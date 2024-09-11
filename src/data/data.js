@@ -23,4 +23,12 @@ export const data = [
     link: "https://calculator-javaascript.netlify.app/",
     git: "https://github.com/SwethaKeerthipati/JsCalculator",
   },
+  {
+    id: 4,
+    img: "https://media1.tenor.com/m/V24Xl3zFHA0AAAAC/no-social-media-social-media.gif",
+    title: "Chat Application",
+    desc: "A chat app enables real-time messaging and communication between users",
+    link: "https://vercel.com/swethakeerthipatis-projects/socialmedia",
+    git: "https://github.com/SwethaKeerthipati/socialmedia",
+  },
 ];
